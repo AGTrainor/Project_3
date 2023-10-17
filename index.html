@@ -33,15 +33,17 @@
             <h5>City:</h5>
             <select id="selDataset" onchange="optionChanged(this.value)"></select>
           </div>
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title">Map</h3>
-            </div>
-            <div id="sample-metadata" class="panel-body"></div>
-          </div>
+        </div>
+          <!-- The div that holds our map -->
+        <div id="map">
+            <div id="legend"></div>
+            <i class="legend-background"></i> 
         </div>
     </div>
-  
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>  
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="./app.js"></script>
