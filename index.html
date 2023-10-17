@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Brewhub Maps!</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-</head>
-
-  <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin="" />
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-  <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+
 </head>
-
 <body>
-
     <div class="container">
-      <div class="row">
-        <div class="col-md-12 jumbotron text-center">
-          <h1>Brewhub Maps!</h1>
-          <p>Find the Brewery near you</p>
-        </div>
-      </div>
-      <div class="row"> 
-        <div class="col-md-2">
-          <div class="well">
-            <h5>City:</h5>
-            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+            <h1>Brewhub Maps!</h1>
+            <p>Find a brewery near you</p>
           </div>
         </div>
-          <!-- The div that holds our map -->
-        <div id="map">
-            <div id="legend"></div>
-            <i class="legend-background"></i> 
+        <div class="map-container">
+          <div id="map" style="width: 700px; height: 300px;"></div>
         </div>
-    </div>
-    <!-- Leaflet JS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>  
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <!---<script src="./app.py"></script>--->
-    <script src="./logic.js"></script>
-  </body>
-  
-  </html>
-  
+        <div class="col-md-2">
+        <div class="well">
+            <h5>City:</h5>
+            <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        </div>
+        <div class="chart-container">
+        <div id="chart_1"></div>
+        <div id="chart_2"></div>
+        </div>
+        </div>
+      </div>
+      
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./app.py"></script>
+  <script src="./logic.js"></script>
+</body>
+</html>
