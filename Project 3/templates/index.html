@@ -12,7 +12,8 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
   crossorigin=""></script>
-  <link rel="stylesheet" type="text/css" href="../static/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
 
 
 
@@ -25,12 +26,35 @@
             <p>Find a brewery near you</p>
           </div>
         </div>
-        <div class="col-md-2">
-        <div class="well">
-            <h5>City:</h5>
-            <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        </div>
-        </div>
+
+      <select id="citySelector" class="dropdown">
+          <option value="All">All</option>
+          <option value="San Francisco">San Francisco</option>
+          <option value="San Diego">San Deigo</option>
+          <option value="Portland">Portland</option>
+          <option value="Seattle">Seattle</option>
+          <option value="Denver">Denver</option>
+          <option value="Chicago">Chicago</option>
+          <option value="San Francisco">San Francisco</option>
+          <option value="Columbus">Columbus</option>
+          <option value="Cincinnati">Cincinnati</option>
+          <option value="Cleveland">Cleveland</option>
+          <option value="Minneapolis">Minneapolis</option>
+          <option value="St. Louis">St. Louis</option>
+          <option value="Spokane">Spokane</option>
+          <option value="Bend">Bend</option>
+          <option value="Albuquerque">Albuquerque</option>
+          <option value="Austin">Austin</option>
+          <option value="Los Angeles">Los Angeles</option>
+          <option value="Milwaukee">Milwaukee</option>
+          <option value="Sacramento">Sacramento</option>
+          <option value="Kansas City">Kansas City</option>
+          <option value="Salt Lake City">Salt Lake City</option>
+
+      </select>
+      
+
+
         <div class="map-container">
             <div id="map" style="width: 800px; height: 400px; align-items: center"></div>
         </div>
@@ -43,7 +67,6 @@
       
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="../app.py"></script>
-  <script src="../static/logic.js"></script>
+  <script src="/static/js/logic.js"></script>
 </body>
 </html>

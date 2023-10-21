@@ -63,7 +63,7 @@ def get_data():
             'latitude': row[14]
         })
 
-    file2 = open('static/data.json', 'w')
+    file2 = open('static/js/data.json', 'w')
     file2.write(json.dumps(data))
     file2.close
 
