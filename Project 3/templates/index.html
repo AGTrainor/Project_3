@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Brewhub Maps!</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+            <h1>Brewhub Maps!</h1>
+            <p>Find a brewery near you</p>
+          </div>
+        </div>
+
+      <select id="citySelector" class="dropdown">
+          <option value="All">All</option>
+          <option value="San Francisco">San Francisco, CA</option>
+          <option value="San Diego">San Deigo, CA</option>
+          <option value="Portland">Portland, OR</option>
+          <option value="Seattle">Seattle, WA</option>
+          <option value="Denver">Denver, CO</option>
+          <option value="Chicago">Chicago, IL</option>
+          <option value="San Francisco">San Francisco, CA</option>
+          <option value="Columbus">Columbus, OH</option>
+          <option value="Cincinnati">Cincinnati, OH</option>
+          <option value="Cleveland">Cleveland, OH</option>
+          <option value="Minneapolis">Minneapolis, MN</option>
+          <option value="Saint Louis">St. Louis, MO</option>
+          <option value="Spokane">Spokane, WA</option>
+          <option value="Bend">Bend, OR</option>
+          <option value="Albuquerque">Albuquerque, NM</option>
+          <option value="Austin">Austin, TX</option>
+          <option value="Los Angeles">Los Angeles, CA</option>
+          <option value="Milwaukee">Milwaukee, WI</option>
+          <option value="Sacramento">Sacramento, CA</option>
+          <option value="Kansas City">Kansas City, MO</option>
+          <option value="Salt Lake City">Salt Lake City, UT</option>
+
+      </select>
+      
+
+
+        <div class="map-container">
+            <div id="map" style="width: 800px; height: 400px; align-items: center"></div>
+        </div>
+
+
+
+        <div class="pie-container">
+          <div id="simpleplot"></div>
+        </div>
+
+
+        <div class="chart-container">
+            <div id="chart_1"></div>
+            <div id="chart_2"></div>
+        </div>
+        </div>
+      </div>
+      
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="/static/js/logic.js"></script>
+  <script src="/static/js/bar.js"></script>
+  
+  
+
+</body>
+</html>
