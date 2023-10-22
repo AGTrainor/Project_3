@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Brewhub Maps!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="">
+    <link rel="stylesheet" type="text/css" href="./static/style.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 jumbotron text-center">
+                <h1>Brewhub Maps!</h1>
+                <p>Find a brewery near you</p>
+            </div>
+        </div>
+       <img id="image" src="http://127.0.0.1:5000/static/brewery.jpeg" height="320"> 
+
+        <div class="col-md-2">
+            <div class="well">
+                <h2>City:</h2>
+                <!-- Corrected the ID attribute from 'selDataset' to 'citySelector' -->
+                <select id="citySelector" onchange="optionChanged()">
+                    <option value="All">All Cities</option>
+                    <!-- City options will be populated dynamically here -->
+                </select>
+                <h2>State:</h2>
+                <!-- Dropdown menu for state -->
+                <select id="stateSelector" onchange="optionChanged()">
+                    <option value="All">All States</option>
+                    <!-- Add more state options as needed -->
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <!-- Corrected the class name from 'map-container' to 'map' for proper CSS styling -->
+    <div class="map">
+        <div id="map" style="width: 90%; height: 400%;"></div>
+    </div>
+
+    <!-- Corrected the class name from 'chart-container' to 'chart' for proper CSS styling -->
+    <div class="chart">
+        <div id="chart_1"></div>
+        <div id="chart_2"></div>
+    </div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <script>
+        function optionChanged() {
+            var selectedCity = document.getElementById('citySelector').value;
+            var selectedState = document.getElementById('stateSelector').value;
+            // Call  filterMarkers function with selectedCity and selectedState as arguments
+            // Example: filterMarkers(selectedCity, selectedState);
+        }
+
+        // Fetch city names from an endpoint (replace 'YOUR_ENDPOINT_URL' with the actual API endpoint URL)
+        fetch('./static/data.json')
+            .then(response => response.json()) // Parse the JSON response
+            .then(data => {
+                const citySelector = document.getElementById('citySelector');
+                const stateSelector = document.getElementById('stateSelector');
+
+                // Populate the dropdowns with city and state names
+                data.forEach(item => {
+                    const cityOption = document.createElement('option');
+                    const stateOption = document.createElement('option');
+
+                    cityOption.value = item.city;
+                    cityOption.textContent = item.city;
+                    citySelector.appendChild(cityOption);
+
+                    stateOption.value = item.state;
+                    stateOption.textContent = item.state;
+                    stateSelector.appendChild(stateOption);
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching city names:', error);
+            });
+    </script>
+    
+    
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script id = pie src="http://127.0.0.1:5000/static/Pie.py"></script>
+    <script src="./static/logic.js"></script> 
+
+    <!--<script id=bar src="http://127.0.0.1:5000/static/Bar.py"></script> -->
+  
+  
+
+</body>
+
+</html>
