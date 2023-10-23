@@ -18,6 +18,8 @@ No need to open another browser to determine if this brewery is worth your time.
 
 The problem our project is trying to solve is giving the audience a one-stop shop for brewery data for multiple locations across the United States. This can assist multiple industries from travel industry, entertainment industary and the small group events. Event planners can use the website to give travelers suggests for breweries. The website serves up brewery name, location and Yelp rates.  
 
+Intro: Susan Espinosa
+
 Database and Flask : Daniel Thomas (data ingestion, ETL process and database architecture) 
 
 API: Jordan Kelly Yelp API and PopUp.
