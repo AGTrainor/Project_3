@@ -16,7 +16,7 @@ The marker comes with a hoover popup which will display:
 No need to open another browser to determine if this brewery is worth your time.  The popup has the Yelp rating.  The rating comes from the popular Yelp website in its familiar rate scoring. 
 
 
-The problem our project is trying to solve is giving the audience a one-stop shop for brewery data for multiple locations across the United States. This can assist multiple industries from travel industry, entertainment industary and the small group events. Event planners can use the website to give travelers suggests for breweries. The website serves up brewery name, location and Yelp rates.  
+The problem our project is trying to solve is giving the audience a one-stop shop for brewery data for multiple locations across the United States. This can assist multiple industries from travel industry, entertainment industry and the small group events. Event planners can use the website to give travelers suggests for breweries. The website serves up brewery name, location and Yelp rates.  
 
 Intro: Susan Espinosa
 
