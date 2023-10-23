@@ -20,17 +20,15 @@ The problem our project is trying to solve is giving the audience a one-stop sho
 
 Database: Daniel Thomas (data ingestion, ETL process and database architecture)
 
+API: Jordan Kelly Yelp API and PopUp.
+
 Pyton Flask API:
 
-API: Jordan Kelly Yelp
+JavaScript: Anthony Trainor
 
-HTML:
+CSS: Emee 
 
-JavaScript:
-
-CSS: 
-
-Charts:
+Charts: Anthony Trainor
 
 Unique view of the data:
   1. Map
