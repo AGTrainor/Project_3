@@ -1,0 +1,73 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: goldenrod;
+}
+
+header {
+  background-color: black;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-12 {
+  width: 100%;
+}
+
+.map {
+  width: 400px;
+  height: 400px;
+  align-items: center
+
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #fffb00; /* Set the glow color and radius */
+  }
+  50% {
+    text-shadow: 0 0 20px #00ff0d; /* Increase the glow radius */
+  }
+  100% {
+    text-shadow: 0 0 5px #FF0000; /* Set back to original glow radius */
+  }
+}
+
+.dropdown
+{
+ padding:15px;
+ font-size:30px ;
+ width: 300px;
+ color: goldenrod;
+ font-weight: bold;
+}
+
+.jumbotron {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid black;
+}
+
+.jumbotron h1 {
+  animation: glow 3s infinite; /* Apply the glow animation to the h1 element within jumbotron */
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.jumbotron h3 {
+  color: white;
+}
+
+.well {
+  background-color: rgba(218, 165, 32, 0);
+  border: 10px solid #ccc;
+  padding: 15px;
+}
+
