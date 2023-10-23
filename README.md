@@ -31,7 +31,7 @@ JavaScript: Anthony Trainor
 
 Charts: Anthony Trainor
 Unique view of the data:
-  1. Map
-  2. Charts
+  1. Map - leaflet
+  2. Charts - plotly 
   3. DropDown with re-centering and markers
 
