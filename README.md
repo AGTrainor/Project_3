@@ -27,6 +27,7 @@ API: Jordan Kelly Yelp API and PopUp.
 CSS: Emee Tupino 
 
 JavaScript: Anthony Trainor
+  the dropdown is using jquery library. (NOTE: optional requirement of using a JS library not from classroom activities)
 
 Charts: Anthony Trainor
 Unique view of the data:
