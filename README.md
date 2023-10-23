@@ -24,7 +24,7 @@ Database and Flask : Daniel Thomas (data ingestion, ETL process and database arc
 
 API: Jordan Kelly Yelp API and PopUp.
 
-CSS: Emee 
+CSS: Emee Tupino 
 
 JavaScript: Anthony Trainor
 
