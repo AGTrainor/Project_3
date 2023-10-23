@@ -13,7 +13,7 @@ The marker comes with a hoover popup which will display:
 •	Brewery Type 
 •	City location
 •	Yelp Rating 
-No need to open another browser to determine if this brewery is worth your time.  The popup has the Yelp rating.  The rating comes from the popular Yelp website in its familiar rating scoring. 
+No need to open another browser to determine if this brewery is worth your time.  The popup has the Yelp rating.  The rating comes from the popular Yelp website in its familiar rate scoring. 
 
 
 the problem....
