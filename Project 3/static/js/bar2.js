@@ -20,8 +20,11 @@ d3.json("static/js/data.json").then((data) => {
     };
 
     let layout = {
-        title: "Breweries by Yelp Rating"
-    }
+        title: "Number of Breweries by Yelp Rating",
+        yaxis: {
+            range: [0, 200]
+        }
+    };
 
     let plotData = [trace1];
 
