@@ -1,0 +1,10 @@
+[{"San Diego": {"latitude": 32.7157, "longitude": -117.1611}}, {"Portland": {"latitude": 45.5152, "longitude": -122.6784} },
+{"Seattle": {"latitude": 47.6061, "longitude": -122.3328}}, {"Denver": {"latitude": 39.7392, "longitude": -104.9903}},
+{"Chicago": {"latitude": 41.8781, "longitude": -87.6298}}, {"San Francisco": {"latitude": 37.7749, "longitude": -122.4194}},
+{"Columbus": {"latitude": 39.9612, "longitude": -82.9988}}, {"Cincinnati": {"latitude": 39.1031, "longitude": -84.5120}},
+{"Cleveland": {"latitude": 41.4993, "longitude": -81.6944}}, {"Minneapolis": {"latitude": 44.9778, "longitude": -93.2650}},
+{"Saint Louis": {"latitude": 38.6270, "longitude": -90.1994}}, {"Spokane": {"latitude": 47.6580, "longitude": -117.4235}},
+{"Bend": {"latitude": 44.0582, "longitude": -121.3153}}, {"Albuquerque": {"latitude": 35.0844, "longitude": -106.6504}},
+{"Austin": {"latitude": 30.2672, "longitude": -97.7431}}, {"Los Angeles": {"latitude": 34.0549, "longitude": -118.2426}},
+{"Milwaukee": {"latitude": 43.0389, "longitude": -87.9065}}, {"Sacramento": {"latitude": 38.5816, "longitude": -121.4944}},
+{"Kansas City": {"latitude": 39.0997, "longitude": -94.5786}}, {"Salt Lake City": {"latitude": 40.7608, "longitude": -111.8910}}]
