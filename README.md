@@ -3,9 +3,9 @@ Members: Susan Espinosa, Emee Tupino, Anthony Trainor, Jordan Kelly, Daniel Thom
 
 The project: Brewhub Maps!  Find a brewery near you.
 
-The website brings our thirty audience breweries across the U.S. 
+The website brings our thirsty audience breweries across the U.S. 
 
-The website includes the top 20 states with the most breweries.  
+The website includes the top 20 cities with the most breweries.  
 The website has easy to use map with functionality to assist in locating breweries.  
 A user can quickly zoom in and zoom out, as well, as transverse the map and view the easy to spot markers.  Each marker lets the user know where a brewery is located. 
 The marker comes with a hoover popup which will display:
